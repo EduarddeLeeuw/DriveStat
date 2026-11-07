@@ -24,15 +24,15 @@
 
 ## Mis-user Stories
 
-1. As a **[malicious user]**, I want to **[make malicious sql commands]** so I can **[edit or read the database]**.
+1. As a **malicious user**, I want to **make malicious sql commands** so I can **edit or read the database**.
     * **Mitigation Criteria:** Only accept numbers and standard commands.
-
-2. As a **[malicious hacker]**, I want to **[break into the DriveStat API]** so I can **[take control of the complete server]**.
-    * **Mitigation Criteria:** The API should run in a dockerized environment, so it is impossible to break out of the environment.
-
-3. As a **[unauthorized user]**, I want to **[be able to make an account]** so I can **[use the advantages of DriveStat]**.
+  
+2. As a **unauthorized user**, I want to **be able to make an account** so I can **use the advantages of DriveStat**.
     * **Mitigation Criteria:** Only the administrator should be able to create accounts, so they can keep track of who uses DriveStat.
 
-3. As a **[malicious hacker]**, I want to **[be able to access the /admin part of the website]** so I can **[bruteforce my way into the admin console]**.
+3. As a **malicious hacker**, I want to **break into the DriveStat API** so I can **take control of the complete server**.
+    * **Mitigation Criteria:** The API should run in a dockerized environment, so it is impossible to break out of the environment.
+
+4. As a **malicious hacker**, I want to **be able to access the /admin part of the website** so I can **bruteforce my way into the admin console**.
     * **Mitigation Criteria:** Require two-factor authentication to log into the admin console.
     * **Mitigation Criteria:** The /admin part should only be visible on the local network, and nowhere else.
