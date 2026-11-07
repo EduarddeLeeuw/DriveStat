@@ -12,7 +12,7 @@
 3. As a **vehicle user**, I want to **connect my vehicle trip data to the database** so I can **keep track of my trips**.
 
    * **Acceptance Criteria:** A user should be able to connect their vehicle to the database which uploads the trip details after every ride, provided the inputs are positive.
-   * **Acceptance Criteria:**The trip data should be visible on the user web page.
+   * \*\*Acceptance Criteria:\*\*The trip data should be visible on the user web page.
 4. As a **vehicle user**, I want to **estimate fuel/energy cost when I enter a driven distance** so I can **calculate how much a trip costs**.
 
    * **Acceptance Criteria:** A panel with a trip cost calculator should exist, in which a user can enter their driven distance to estimate the cost of fuel/energy of a trip.
@@ -45,11 +45,9 @@
 
 
 
-!\[Admin Mockup](./Images/AdminMockup.png)
+!\[Admin Mockup](AdminMockup.png)
 
-!\[User Mockup](./Images/UserMockup.png)
+!\[User Mockup](UserMockup.png)
 
-!\[Database Mockup](./Images/DatabaseMockup.png)
-
-
+!\[Database Mockup](DatabaseMockup.png)
 
