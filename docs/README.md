@@ -45,9 +45,9 @@
 
 
 
-!\[Admin Mockup](AdminMockup.png)
+![Admin Mockup](Images/AdminMockup.png)
 
-!\[User Mockup](UserMockup.png)
+![User Mockup](Images/UserMockup.png)
 
-!\[Database Mockup](DatabaseMockup.png)
+![Database Mockup](Images/DatabaseMockup.png)
 
