@@ -29,9 +29,12 @@ docker compose up -d --build
  ```bash
 python manage.py createsuperuser
 ```
-After that, you can log in your admin account at http://localhost/admin
+After that, you can log in your admin account at http://localhost/admin.
+
 There you can create user accounts.
+
 With a user account, you can add a vehicle, and start uploading your refuel/charging sessions.
+
 This will create graphs and enable you to track the statistics of your vehicle.
 
  ## License
