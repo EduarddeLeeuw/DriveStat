@@ -51,3 +51,6 @@
 
 ![Database Mockup](Images/DatabaseMockup.png)
 
+## C4 Model
+
+![C4 System Context](Images/C4_1.png)
