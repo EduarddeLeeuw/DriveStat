@@ -6,8 +6,8 @@ This web application can be used to track statistics of a vehicle, such as gas/e
 
 ### Prerequisites
 
-*Git
-*Docker
+* Git
+* Docker
 
 ### Setup
 
