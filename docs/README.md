@@ -54,3 +54,5 @@
 ## C4 Model
 
 ![C4 System Context](Images/C4_1.png)
+![C4 System Container](Images/C4_2.png)
+![C4 System Component](Images/C4_3.png)
