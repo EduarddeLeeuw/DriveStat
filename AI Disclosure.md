@@ -3,4 +3,5 @@
 * Brainstorming: What should the web app include and how should the security boundaries look like?
 * Establishing the installation guidelines
 * Reviewing various parts of the project
+* Bugs and error solving
 
