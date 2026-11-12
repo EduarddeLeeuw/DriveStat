@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from tracker.views import rest_get_vehicle
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rest/vehicle/<int:vehicle_id>/', rest_get_vehicle, name='rest_get_vehicle'),
 ]
