@@ -1,24 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Drivestat Login</title>
-</head>
-<body>
-    <h2>Drivestat Login</h2>
-    {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-    <form method="post" action="{% url 'login' %}">
-        {% csrf_token %}
-        <label for="username">Username:</label>
-        <input type="text" name="username" autofocus required><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br>
-        <input type="submit" value="Login">
-    </form>
-    <form method="post" action="{% url 'logout' %}">
-    {% csrf_token %}
-    <button type="submit">Uitloggen</button>
-</form>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}DriveStat Login{% endblock %}
+
+{% block content %}
+    <h2>Log into DriveStat</h2>
+    <div class="col-md-6 col-lg-4">
+        {% if form.errors %}
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label class="col-form-label mt-4" for="username">Username:</label>
+                <input class="form-control is-invalid" type="text" name="username" autofocus required>
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label mt-4" for="password">Password:</label>
+                <input class="form-control is-invalid" type="password" name="password" required>
+                <div class="invalid-feedback">Sorry, that didn't work. Try again?</div>
+                </div>
+                <button class="btn btn-primary" type="submit">Login</button>
+            </form>
+        {% else %}
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label class="col-form-label mt-4" for="username">Username:</label>
+                    <input class="form-control" type="text" name="username" autofocus required>
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label mt-4" for="password">Password:</label>
+                    <input class="form-control" type="password" name="password" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Login</button>
+            </form>
+        {% endif %}
+    </div>
+    
+{% endblock %}

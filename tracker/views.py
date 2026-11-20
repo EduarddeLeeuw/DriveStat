@@ -17,3 +17,9 @@ def rest_get_vehicle(request, vehicle_id):
         return Response(serializer.data)
     except Vehicle.DoesNotExist:
         return Response({'error': 'Vehicle not found.'}, status=status.HTTP_404_NOT_FOUND)
+
+def home(request):
+      return render(request, 'index.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')

@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tracker.views import rest_get_vehicle
+from tracker.views import rest_get_vehicle, home, dashboard
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    path('', home, name='index'),
+    path('dashboard/', dashboard, name='dashboard'),
     path('admin/', admin.site.urls),
     path('rest/vehicle/<int:vehicle_id>/', rest_get_vehicle, name='rest_get_vehicle'),
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
