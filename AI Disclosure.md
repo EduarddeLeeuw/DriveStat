@@ -4,4 +4,5 @@
 * Establishing the installation guidelines
 * Reviewing various parts of the project
 * Bugs and error solving
+* Explanation of various techniques
 
